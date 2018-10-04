@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+,<html>
+<head>
+   <title> Projectsomalibook </title>
+   <head> 
+   
+   SomaliBook TEST site 
+   
+   </head>
+   
+   <body>
+
+ <Grid
+     x:Name="CustomerListRoot"
+     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+     <RelativePanel>
+         <CommandBar
+             x:Name="mainCommandBar"
+             HorizontalAlignment="Stretch"
+             Background="AliceBlue">
+             <!--CommandBar content-->
+        </CommandBar>
+        <telerikGrid:RadDataGrid
+             x:Name="DataGrid"
+             BorderThickness="0"
+             ColumnDataOperationsMode="Flyout"
+             GridLinesVisibility="None"
+             GroupPanelPosition="Left"
+             RelativePanel.AlignLeftWithPanel="True"
+             RelativePanel.AlignRightWithPanel="True"
+             RelativePanel.Below="mainCommandBar" />
+    </RelativePanel>
+    </body>
+    </html> 
+</Grid>
